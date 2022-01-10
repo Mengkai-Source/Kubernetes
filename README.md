@@ -4,12 +4,12 @@
 #### -- Prepare the structure of this project that you create is as follows:
 
 | api.py \
-| base <br/>
-      | namespace.yaml <br/>
-      | deployment.yaml <br/>
-      | service.yaml <br/>
-      | kustomization.yaml <br/>
-| Dockerfile <br/>
+| base\
+      | namespace.yaml\
+      | deployment.yaml\
+      | service.yaml\
+      | kustomization.yaml\
+| Dockerfile
 
 #### -- Install Kustomize by running below command lines
     ##### -- Download Kustomize
