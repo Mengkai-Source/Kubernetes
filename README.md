@@ -49,10 +49,10 @@ kubectl apply --kustomize=${PWD}/base/ --record=true
 To see all components deployed into this namespace use this command: \
 $ kubectl get ns
 
-Example: 
+-- Example: \
       NAME              STATUS   AGE \
       default           Active   69m \
       kube-node-lease   Active   69m \
       kube-public       Active   69m \
       kube-system       Active   69m \
-      mlops             Active   27m \
+      mlops             Active   27m
