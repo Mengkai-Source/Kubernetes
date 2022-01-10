@@ -1,4 +1,5 @@
 # Kubernetes project on GCP
+#### Note: This is based on instruction from Google https://cloud.google.com/community/tutorials/kubernetes-ml-ops
 
 ### 1. Containerizing a simple ML model scoring service using Flask and Docker
 
