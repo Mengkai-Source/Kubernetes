@@ -6,10 +6,10 @@
 docker build -t ml-k8s .
 
 #### Pushing the Docker Image to Container Registry
-docker logout
-docker login -u bosmk -p [PASSWORD]
-docker tag ml-k8s bosmk/ml-k8s
-docker push bosmk/ml-k8s
+docker logout \
+docker login -u bosmk -p [PASSWORD] \
+docker tag ml-k8s bosmk/ml-k8s \
+docker push bosmk/ml-k8s \
 
 ### 2. Setting up and connecting to the Kubernetes cluster
 
