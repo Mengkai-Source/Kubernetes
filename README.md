@@ -7,13 +7,13 @@
 
 | base
 
-  | namespace.yaml
-  
-  | deployment.yaml
-  
-  | service.yaml
-  
-  | kustomization.yaml
+      | namespace.yaml
+
+      | deployment.yaml
+
+      | service.yaml
+
+      | kustomization.yaml
   
 | Dockerfile
 
