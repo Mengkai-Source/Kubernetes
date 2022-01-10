@@ -20,7 +20,7 @@ $ gcloud container clusters create k8s-ml-cluster --num-nodes 3 --machine-type g
 You may need to wait a moment for the cluster to be created.
 
 Connect to the cluster: \
-$ gcloud container clusters get-credentials tf-gke-k8s --zone us-west1-b --project [PROJECT_ID]
+$ gcloud container clusters get-credentials k8s-ml-cluster --zone us-west1-b --project [PROJECT_ID]
 
 
 ### 3. Deploying the containerized ML model to Kubernetes
