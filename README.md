@@ -71,7 +71,7 @@ $ kubectl get service -n mlops
       NAME                TYPE             CLUSTER-IP        EXTERNAL-IP           PORT(S)          AGE \
       score-app       LoadBalancer        xx.x.xx.xxx       xx.xxx.xxx.xx      5000:xxxxx/TCP       29m
       
-Test the deployed model \
+### 4. Test the deployed model \
 
 curl http://[EXTERNAL_IP_ADDRESS]:5000/score \
     --request POST \
