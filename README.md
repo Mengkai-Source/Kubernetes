@@ -2,10 +2,10 @@
 
 ### 1. Containerizing a simple ML model scoring service using Flask and Docker
 
-#### Defining the Docker image with the Dockerfile
+#### -- Defining the Docker image with the Dockerfile
 docker build -t ml-k8s .
 
-#### Pushing the Docker Image to Container Registry
+#### -- Pushing the Docker Image to Container Registry
 docker logout \
 docker login -u bosmk -p [PASSWORD] \
 docker tag ml-k8s bosmk/ml-k8s \
@@ -15,11 +15,11 @@ docker push bosmk/ml-k8s
 
 /Note/: Ensure that you have enabled the Google Kubernetes Engine API. You can enable an API in the Cloud Console.
 
-Start a cluster: \
+#### -- Start a cluster: \
 $ gcloud container clusters create k8s-ml-cluster --num-nodes 3 --machine-type g1-small --zone us-west1-b \
 You may need to wait a moment for the cluster to be created.
 
-Connect to the cluster: \
+#### -- Connect to the cluster: \
 $ gcloud container clusters get-credentials k8s-ml-cluster --zone us-west1-b --project [PROJECT_ID]
 
 
@@ -42,7 +42,7 @@ $ gcloud container clusters get-credentials k8s-ml-cluster --zone us-west1-b --p
     tar xzf ./kustomize_v*_linux_amd64.tar.gz && \
     mv kustomize /usr/bin/
     
-#### Deploy the app
+#### -- Deploy the app
 After setting up these YAML files, you can deploy your app using this single command: \
 kubectl apply --kustomize=${PWD}/base/ --record=true
 
