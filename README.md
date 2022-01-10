@@ -15,11 +15,11 @@ docker push bosmk/ml-k8s
 
 Ensure that you have enabled the Google Kubernetes Engine API. You can enable an API in the Cloud Console.
 
-Start a cluster:
-$ gcloud container clusters create k8s-ml-cluster --num-nodes 3 --machine-type g1-small --zone us-west1-b
+Start a cluster: \
+$ gcloud container clusters create k8s-ml-cluster --num-nodes 3 --machine-type g1-small --zone us-west1-b \
 You may need to wait a moment for the cluster to be created.
 
-Connect to the cluster:
+Connect to the cluster: \
 $ gcloud container clusters get-credentials tf-gke-k8s --zone us-west1-b --project [PROJECT_ID]
 
 
