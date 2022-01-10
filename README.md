@@ -61,12 +61,12 @@ To see the status of the deployment, use this command: \
 $ kubectl get deployment -n mlops
 
 -- Example: \
-      NAME        READY   UP-TO-DATE   AVAILABLE   AGE \
-      score-app   2/2     2            2           28m
+      NAME            READY       UP-TO-DATE     AVAILABLE       AGE \
+      score-app        2/2             2             2           28m
       
 To see the status of the service, use this command: \
 $ kubectl get service -n mlops
 
 -- Example: \
-      NAME        TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)          AGE \
-      score-app   LoadBalancer   xx.x.xx.xxx   xx.xxx.xxx.xx   5000:xxxxx/TCP   29m
+      NAME                TYPE             CLUSTER-IP        EXTERNAL-IP           PORT(S)          AGE \
+      score-app       LoadBalancer        xx.x.xx.xxx       xx.xxx.xxx.xx      5000:xxxxx/TCP       29m
