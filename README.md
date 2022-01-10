@@ -41,3 +41,18 @@ $ gcloud container clusters get-credentials tf-gke-k8s --zone us-west1-b --proje
     ##### -- Unzip downloaded Kustomize file -> kustomize and move kustomize to the primary directory of executable commands on the system. (Note: /usr/bin is a standard directory on Unix-like operating systems that contains most of the executable files (i.e., ready-to-run programs) that are not needed for booting (i.e., starting) or repairing the system.)
     tar xzf ./kustomize_v*_linux_amd64.tar.gz && \
     mv kustomize /usr/bin/
+    
+#### Deploy the app
+After setting up these YAML files, you can deploy your app using this single command: \
+kubectl apply --kustomize=${PWD}/base/ --record=true
+
+To see all components deployed into this namespace use this command: \
+$ kubectl get ns
+
+Example: 
+      NAME              STATUS   AGE \
+      default           Active   69m \
+      kube-node-lease   Active   69m \
+      kube-public       Active   69m \
+      kube-system       Active   69m \
+      mlops             Active   27m \
