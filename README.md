@@ -77,7 +77,7 @@ $ kubectl get service -n mlops
 curl http://[EXTERNAL_IP_ADDRESS]:5000/score \
     --request POST \
     --header "Content-Type: application/json" \
-    --data '{"X": [1, 2]}
+    --data '{"X": [1, 2]}'
 
 The output should look something like the following: \
 {"score":[1,2]}
