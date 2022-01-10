@@ -1,6 +1,29 @@
 # Kubernetes project on GCP
 
-### 1. Deploying the containerized ML model to Kubernetes
+### 1. Containerizing a simple ML model scoring service using Flask and Docker
+
+#### Defining the Docker image with the Dockerfile
+docker build -t ml-k8s .
+
+#### Pushing the Docker Image to Container Registry
+docker logout
+docker login -u bosmk -p [PASSWORD]
+docker tag ml-k8s bosmk/ml-k8s
+docker push bosmk/ml-k8s
+
+### 2. Setting up and connecting to the Kubernetes cluster
+
+Ensure that you have enabled the Google Kubernetes Engine API. You can enable an API in the Cloud Console.
+
+Start a cluster:
+$ gcloud container clusters create k8s-ml-cluster --num-nodes 3 --machine-type g1-small --zone us-west1-b
+You may need to wait a moment for the cluster to be created.
+
+Connect to the cluster:
+$ gcloud container clusters get-credentials tf-gke-k8s --zone us-west1-b --project [PROJECT_ID]
+
+
+### 3. Deploying the containerized ML model to Kubernetes
 #### -- Prepare the structure of this project that you create is as follows:
 
 | api.py \
