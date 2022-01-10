@@ -70,3 +70,13 @@ $ kubectl get service -n mlops
 -- Example: \
       NAME                TYPE             CLUSTER-IP        EXTERNAL-IP           PORT(S)          AGE \
       score-app       LoadBalancer        xx.x.xx.xxx       xx.xxx.xxx.xx      5000:xxxxx/TCP       29m
+      
+Test the deployed model \
+
+curl http://[EXTERNAL_IP_ADDRESS]:5000/score \
+    --request POST \
+    --header "Content-Type: application/json" \
+    --data '{"X": [1, 2]}
+
+The output should look something like the following: \
+{"score":[1,2]}
