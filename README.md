@@ -9,11 +9,11 @@ docker build -t ml-k8s .
 docker logout \
 docker login -u bosmk -p [PASSWORD] \
 docker tag ml-k8s bosmk/ml-k8s \
-docker push bosmk/ml-k8s \
+docker push bosmk/ml-k8s
 
 ### 2. Setting up and connecting to the Kubernetes cluster
 
-Ensure that you have enabled the Google Kubernetes Engine API. You can enable an API in the Cloud Console.
+/Note/: Ensure that you have enabled the Google Kubernetes Engine API. You can enable an API in the Cloud Console.
 
 Start a cluster: \
 $ gcloud container clusters create k8s-ml-cluster --num-nodes 3 --machine-type g1-small --zone us-west1-b \
