@@ -3,13 +3,13 @@
 ### 1. Deploying the containerized ML model to Kubernetes
 #### -- Prepare the structure of this project that you create is as follows:
 
-| api.py
-| base
-      | namespace.yaml
-      | deployment.yaml
-      | service.yaml
-      | kustomization.yaml
-| Dockerfile
+| api.py <br/>
+| base <br/>
+      | namespace.yaml <br/>
+      | deployment.yaml <br/>
+      | service.yaml <br/>
+      | kustomization.yaml <br/>
+| Dockerfile <br/>
 
 #### -- Install Kustomize by running below command lines
     ##### -- Download Kustomize
