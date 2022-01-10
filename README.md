@@ -5,10 +5,10 @@
 
 | api.py \
 | base\
-      | namespace.yaml\
-      | deployment.yaml\
-      | service.yaml\
-      | kustomization.yaml\
+      -> | namespace.yaml\
+      -> | deployment.yaml\
+      -> | service.yaml\
+      -> | kustomization.yaml\
 | Dockerfile
 
 #### -- Install Kustomize by running below command lines
